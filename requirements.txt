@@ -1,0 +1,28 @@
+# Core
+pandas>=2.0
+numpy>=1.24
+scipy>=1.11
+
+# Model loading and inference.
+# scikit-learn is PINNED. The artefacts were fitted under 1.6.1; loading them
+# under a different minor version raises InconsistentVersionWarning and, for
+# some estimators, unpickles into an object that predicts incorrectly.
+scikit-learn==1.6.1
+joblib>=1.3
+xgboost>=2.0
+tensorflow>=2.15
+
+# Feature construction -- required for inference, not optional
+yfinance>=0.2.40
+ta>=0.11
+
+# Streamlit results console
+streamlit>=1.30
+Pillow>=10.0
+
+# Notebook reproduction only
+matplotlib>=3.8
+shap>=0.44
+
+# Tests
+pytest>=7.0

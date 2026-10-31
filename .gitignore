@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.Python
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Cached market data. Roughly 45 MB and fully regenerable by running
+# predict.py once online, so it does not belong in the repository.
+data/*.csv
+data/raw/
+*.pkl
+
+# Test artefacts
+.pytest_cache/
+
+# Trained artefacts. Deliberately excluded -- the Random Forest exceeds
+# GitHub's 100 MB per-file limit. See models/README.md for regeneration.
+models/*.joblib
+models/*.keras
+
+
+# Local backups
+backup_*/
